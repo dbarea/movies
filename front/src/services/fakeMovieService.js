@@ -2,7 +2,7 @@ import * as genresAPI from "./fakeGenreService";
 import axios from 'axios';
 
 export async function getMovies() {
-  const items = await axios.get('http://localhost:3001/movies')
+  const items = await axios.get('http://localhost:3002/movies')
   return items.data;
 }
 
@@ -26,5 +26,5 @@ export function saveMovie(movie) {
  */}
 
 export function deleteMovie(id) {
-  axios.delete("http://localhost:3001/movie/" + id);
+  axios.delete("http://localhost:3002/movie/" + id);
 }
