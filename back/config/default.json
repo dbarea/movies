@@ -1,0 +1,5 @@
+{
+  "port": "3002",
+  "mongoUrl": "mongodb+srv://test:12345@cluster0.7myyb.mongodb.net/?retryWrites=true&w=majority",
+  "usarBaseFake": false
+}
