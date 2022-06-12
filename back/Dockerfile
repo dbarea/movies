@@ -6,6 +6,6 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm i
 COPY . .
-ENV API_URL=http://wwww.apiurl.com
+ENV UNA_VARIABLE_DE_ENTORNO="Valor la variable de entorno"
 EXPOSE 3002
 CMD ["npm", "start"]

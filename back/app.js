@@ -28,6 +28,11 @@ app.delete('/movie/:id', async (req, res) => {
   console.log("movie " + req.params.id + "deleted");
 })
 
+app.get('/entorno', async (req, res) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.send(process.env.UNA_VARIABLE_DE_ENTORNO);
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
