@@ -14,7 +14,10 @@ docker build -t cine-front .
 docker run -d -p 3000:3000 --name cine-front1 cine-front
 ```
 
-probar desde el browser a http://localhost:3000 para el front y http:// localhost:3002/movies para el back. O mediante el comando `curl` 
+probar desde el browser (o el comando `curl`) a http://localhost:3000 para el front y http://localhost:3002/movies.  
 
 Funciona en windows y en linux, probar en mac
+
+## Referencias
+[Agregando Ip estática a contenedor](Agregando Ip estática a contenedor)
 
