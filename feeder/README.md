@@ -1,5 +1,5 @@
 # Alimentación de la DB
-Carga un archivo json usando python y conectándose con el access point de back
+Carga un archivo json usando python y conectándose con el end point del backend
 El contenido del json está embebido en el código de _feeder.py_
 
 ## Docker 

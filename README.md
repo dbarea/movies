@@ -35,5 +35,5 @@ docker run -t --network host --name feeder1 feeder
 Funciona en windows y en linux, probar en mac
 
 ## Referencias
-[Agregando Ip estática a contenedor](Agregando Ip estática a contenedor)
+[Agregando Ip estática a contenedor](https://zeroidentidad.gitbook.io/docker-facilito/networks/agregando_ip_estatica_contenedor)
 
