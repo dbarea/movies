@@ -54,3 +54,10 @@ docker run -d --network host --name cine-back2 cine-back
 
 1. Agregarla como el ejemplo UNA_VARIABLE_DE_ENTORNO en el Dockerfile
 2. Leerla como el ejemplo en app.js, endpoint /entorno.
+
+## Como agregar un documento json a la base:
+
+1. Hay que usar el endpoint "movie" de back
+   a. El endpoint es un POST
+   b. Hay que pasarle el json en el body del request
+2. Para enviar un post se puede usar https://www.postman.com/downloads/

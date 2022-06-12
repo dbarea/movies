@@ -39,6 +39,24 @@ class MongoDb {
   
     return list;
   }
+
+  async insert(collectionName, document) {
+    let result;
+    const client = new MongoClient(config.get("mongoUrl"));
+  
+    try {
+      await client.connect();
+      const database = client.db("moviesStore");
+      const collection = database.collection(collectionName);
+      result = await collection.insertOne(document);
+   
+    } finally {
+      await client.close();
+    }  
+  
+    return result;
+  }
+  
 }
 
 module.exports = MongoDb 

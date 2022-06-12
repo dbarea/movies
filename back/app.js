@@ -4,8 +4,11 @@ const app = express()
 const port = config.get("port")
 const cors = require("cors");
 const DbFactory = require('./db/dbFactory.js');
+const bodyParser = require('body-parser');
 
 app.use(cors());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 const dbFactory = new DbFactory();
 const db = dbFactory.db;
@@ -31,6 +34,14 @@ app.delete('/movie/:id', async (req, res) => {
 app.get('/entorno', async (req, res) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.send(process.env.UNA_VARIABLE_DE_ENTORNO);
+})
+
+app.post('/movie', async (req, res) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  const result = await db.insert("movies", req.body);  
+  console.log(`A document was inserted with the _id: ${result.insertedId}`);
+  console.log(req.body);
+  res.end();
 })
 
 app.listen(port, () => {
