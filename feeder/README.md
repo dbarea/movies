@@ -17,5 +17,8 @@ docker run -t --network host --name feeder1 feeder
 Ejecutar `python feeder.py`
 
 ## Referencias
-[How do I post JSON using the Python Requests library?](https://reqbin.com/code/python/m2g4va4a/python-requests-post-json-example#:~:text=To%20post%20a%20JSON%20to,it%20to%20a%20JSON%20string)
-[broadinstitute/python-requests - https://hub.docker.com/](https://hub.docker.com/r/broadinstitute/python-requests)
+- [How do I post JSON using the Python Requests library?](https://reqbin.com/code/python/m2g4va4a/python-requests-post-json-example#:~:text=To%20post%20a%20JSON%20to,it%20to%20a%20JSON%20string)
+- [broadinstitute/python-requests - https://hub.docker.com/](https://hub.docker.com/r/broadinstitute/python-requests)
+- [Convert JSON to dictionary in Python](https://www.geeksforgeeks.org/convert-json-to-dictionary-in-python/)
+- [How to add a key-value to JSON data retrieved from a file?](https://stackoverflow.com/questions/23111625/how-to-add-a-key-value-to-json-data-retrieved-from-a-file)
+- [Python timestamp to datetime and vice-versa](https://www.programiz.com/python-programming/datetime/timestamp-datetime)
