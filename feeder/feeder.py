@@ -13,6 +13,9 @@ while True:
     now = datetime.now()
     timestamp = datetime.timestamp(now)
     jsonf['timestamp'] = timestamp
+    # https://www.mongodb.com/docs/manual/core/timeseries-collections/
+    # db.collection.findOne().sort({age:-1}) //get Max without need for limit(1)
+    # https://www.analyticsvidhya.com/blog/2020/08/query-a-mongodb-database-using-pymongo/
 
     r = requests.post('http://localhost:3002/movie', json = jsonf)
     print(r)
